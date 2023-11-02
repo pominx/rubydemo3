@@ -10,6 +10,9 @@
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-*
+/vendor/bundle
+/lib/bundler/man/
+/.sass-cache
 
 # Ignore all logfiles and tempfiles.
 /log/*
@@ -31,10 +34,53 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+/config/credentials/production.key
+/config/credentials/staging.key
+/config/credentials/development.key
+/config/credentials/test.key
+/config/google-api-key.json
 
+/public/sitemap.xml
 /public/packs
 /public/packs-test
 /node_modules
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+/config/initializers/secret_token.rb
+/config/secrets.yml
+/config/database.yml
+/.env
+/.env_js
+.ruby-version
+
+# Redis Snapshot file
+/dump.rdb
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+.*.icloud
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Ignore rubymine generate automatically
+.idea
